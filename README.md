@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sofia Dias — Portfolio (PHP / HTML / CSS / JS)
 
 Static-ish portfolio site, rendered server-side with PHP.
@@ -27,3 +28,6 @@ Open http://localhost:8000.
 Upload the folder to any PHP host (shared hosting, Apache, Nginx + PHP-FPM).
 For the contact form to send email, `mail()` must be configured on the server;
 otherwise messages are still saved to `api/messages.log`.
+=======
+# sofiadiasportfolio
+>>>>>>> 26e8efc409de440da643be3a21f9de026be11ec4
