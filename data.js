@@ -21,10 +21,10 @@ window.SITE_DATA = {
     { name:"French", level:3 }
   ],
   education: [
+    { year:"2026", title:"Web Development", place:"350h Course"},
+    { year:"2025", title:"Neuromarketing", place:"50h Course"},
     { year:"2020", title:"Master's Degree — Graphic Design", place:"Escola Superior de Artes Aplicadas, IPCB" },
     { year:"2017", title:"Bachelor — Communication Design & Audiovisual Production", place:"Escola Superior de Artes Aplicadas, IPCB" },
-    { year:"2026", title:"Web Development", place:"350h Course", tag:"New" },
-    { year:"2025", title:"Neuromarketing", place:"50h Course", tag:"New" },
   ],
   experience: [
     { year:"2013–2018", title:"Part-time Sales Assistant", place:["Jota R's (2013–2014)","Clássico Bar (2017–2018)"] },
