@@ -85,6 +85,11 @@
         if (status) status.textContent = "Please fill in every field.";
         return;
       }
+      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!emailOk) {
+        if (status) status.textContent = "Please enter a valid email address.";
+        return;
+      }
       const subject = encodeURIComponent(`New message from ${name}`);
       const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
       window.location.href = `mailto:sofia.gr.13@gmail.com?subject=${subject}&body=${body}`;
