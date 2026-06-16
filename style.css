@@ -131,6 +131,13 @@ img{max-width:100%;display:block}
 .skill-head{font-family:var(--font-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;color:var(--muted-foreground);border-bottom:1px solid var(--border);padding-bottom:.75rem;margin-bottom:1rem}
 .skill-list{list-style:none}
 .skill-list li{font-size:1.25rem;margin-bottom:.4rem}
+.lang-block{grid-column:1/-1}
+.lang-list{display:flex;flex-direction:column;gap:1rem;margin-top:.25rem}
+.lang-row{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.lang-name{font-size:1.25rem}
+.lang-dots{display:flex;gap:.45rem}
+.dot{width:.85rem;height:.85rem;border-radius:50%;border:2px solid var(--primary);background:transparent;display:inline-block}
+.dot.filled{background:var(--primary)}
 
 /* Education */
 .edu-list{list-style:none;margin-top:1rem}

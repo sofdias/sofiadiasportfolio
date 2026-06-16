@@ -15,11 +15,22 @@ window.SITE_DATA = {
     { title:"E-commerce", items:["Shopify","Amazon Seller Central","SEO","Social Strategy"] },
     { title:"Also Fluent In", items:["CorelDraw","Canva","LibreOffice Draw"] }
   ],
+  languages: [
+    { name:"Portuguese", level:5 },
+    { name:"English", level:4 },
+    { name:"French", level:3 }
+  ],
   education: [
     { year:"2020", title:"Master's Degree — Graphic Design", place:"Escola Superior de Artes Aplicadas, IPCB" },
     { year:"2017", title:"Bachelor — Communication Design & Audiovisual Production", place:"Escola Superior de Artes Aplicadas, IPCB" },
     { year:"2024", title:"Web Development", place:"350h Course", tag:"New" },
     { year:"2024", title:"Neuromarketing", place:"50h Course", tag:"New" },
     { year:"2019", title:"Erasmus+ Internship", place:"Hilarious Digital Agency, Brussels" }
+  ],
+  experience: [
+    { year:"2013–2018", title:"Part-time Sales Assistant", place:["Jota R's (2013–2014)","Clássico Bar (2017–2018)"] },
+    { year:"2017–Present", title:"Freelancer", place:["Self-employed — graphic & web design projects"] },
+    { year:"2019", title:"Graphic Designer Internship — Erasmus+", place:["6 months internship at Hilarious Digital Agency in Brussels, Belgium"] },
+    { year:"2020–2024", title:"Head Graphic Designer", place:["CARISPIBET Lda. — Lisbon, Portugal","E-commerce company that specializes in decorative signs"] }
   ]
 };

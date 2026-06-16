@@ -1,6 +1,7 @@
 (function () {
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;" }[c]));
-  const D = window.SITE_DATA || { marquee: [], projects: [], skills: [], education: [] };
+  const D = window.SITE_DATA || { marquee: [], projects: [], skills: [], languages: [], education: [], experience: [] };
+  const place = (p) => Array.isArray(p) ? p.map(esc).join("<br/>") : esc(p);
 
   // Year
   const y = document.getElementById("year");
@@ -40,11 +41,29 @@
   // Skills
   const sg = document.getElementById("skills-grid");
   if (sg) {
-    sg.innerHTML = D.skills.map((g) => `
+    let html = D.skills.map((g) => `
       <div>
         <h3 class="skill-head">${esc(g.title)}</h3>
         <ul class="skill-list">${g.items.map((it) => `<li class="display">${esc(it)}</li>`).join("")}</ul>
       </div>`).join("");
+
+    if (D.languages && D.languages.length) {
+      html += `
+        <div class="lang-block">
+          <h3 class="skill-head">Languages</h3>
+          <div class="lang-list">
+            ${D.languages.map((l) => `
+              <div class="lang-row">
+                <span class="lang-name">${esc(l.name)}</span>
+                <span class="lang-dots" role="img" aria-label="${esc(l.level)} out of 5">
+                  ${Array.from({ length: 5 }, (_, i) => `<span class="dot ${i < l.level ? "filled" : ""}"></span>`).join("")}
+                </span>
+              </div>`).join("")}
+          </div>
+        </div>`;
+    }
+
+    sg.innerHTML = html;
   }
 
   // Education
@@ -55,7 +74,21 @@
         <span class="edu-year">${esc(e.year)}</span>
         <div class="edu-body">
           <h3 class="display edu-title">${esc(e.title)}</h3>
-          <p class="muted">${esc(e.place)}</p>
+          <p class="muted">${place(e.place)}</p>
+        </div>
+        ${e.tag ? `<span class="edu-tag">${esc(e.tag)}</span>` : ""}
+      </li>`).join("");
+  }
+
+  // Experience
+  const ex = document.getElementById("experience-list");
+  if (ex) {
+    ex.innerHTML = D.experience.map((e) => `
+      <li class="edu-item">
+        <span class="edu-year">${esc(e.year)}</span>
+        <div class="edu-body">
+          <h3 class="display edu-title">${esc(e.title)}</h3>
+          <p class="muted">${place(e.place)}</p>
         </div>
         ${e.tag ? `<span class="edu-tag">${esc(e.tag)}</span>` : ""}
       </li>`).join("");
