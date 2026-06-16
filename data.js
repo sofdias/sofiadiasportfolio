@@ -1,5 +1,5 @@
 window.SITE_DATA = {
-  marquee: ["Visual Identity","Editorial","Packaging","Brand Systems","Social","Motion","E-commerce","Web Design","Print"],
+  marquee: ["Visual Identity","Brand Systems","Web Design","Editorial","Social","E-commerce","Motion","Packaging","Print"],
   projects: [
     { n:"01", title:"Aiko Designs", tag:"Visual Identity", year:"2017", img:"assets/portfolio/aiko.jpg", copy:"Personal freelance brand. The owl as symbol of change and clarity — built from an introspective brief into a full identity system and brand book." },
     { n:"02", title:"Cristina Clamote", tag:"Visual Identity / Salon", year:"2019", img:"assets/portfolio/clamote.jpg", copy:"Rebrand of a Porto hair salon with 20+ years of history. Modern, unisex, instantly recognisable — applied across signage, uniforms, social and interior." },
@@ -23,9 +23,8 @@ window.SITE_DATA = {
   education: [
     { year:"2020", title:"Master's Degree — Graphic Design", place:"Escola Superior de Artes Aplicadas, IPCB" },
     { year:"2017", title:"Bachelor — Communication Design & Audiovisual Production", place:"Escola Superior de Artes Aplicadas, IPCB" },
-    { year:"2024", title:"Web Development", place:"350h Course", tag:"New" },
-    { year:"2024", title:"Neuromarketing", place:"50h Course", tag:"New" },
-    { year:"2019", title:"Erasmus+ Internship", place:"Hilarious Digital Agency, Brussels" }
+    { year:"2026", title:"Web Development", place:"350h Course", tag:"New" },
+    { year:"2025", title:"Neuromarketing", place:"50h Course", tag:"New" },
   ],
   experience: [
     { year:"2013–2018", title:"Part-time Sales Assistant", place:["Jota R's (2013–2014)","Clássico Bar (2017–2018)"] },
