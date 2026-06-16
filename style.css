@@ -67,9 +67,9 @@ img{max-width:100%;display:block}
 .eyebrow{display:flex;align-items:center;gap:.75rem;font-family:var(--font-mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.2em;color:var(--muted-foreground);margin-bottom:2rem}
 .eyebrow .bar{display:inline-block;width:2rem;height:1px;background:var(--primary)}
 .hero-title{font-size:clamp(3.5rem,14vw,18rem);line-height:.82;text-wrap:balance}
-.hero-sub{margin-top:3rem;display:grid;grid-template-columns:repeat(12,1fr);gap:2rem}
-.hero-sub p{grid-column:1/-1;font-size:1.15rem;line-height:1.6;text-wrap:balance}
-@media(min-width:768px){.hero-sub p{grid-column:6/13;font-size:1.25rem}}
+.hero-sub{margin-top:3rem;display:flex;gap:2rem}
+.hero-sub p{font-size:1.15rem;line-height:1.6;text-wrap:balance}
+@media(min-width:768px){.hero-sub p{font-size:1.25rem}}
 .hero-ctas{margin-top:4rem;display:flex;flex-wrap:wrap;gap:1rem}
 
 /* Marquee */
