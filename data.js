@@ -1,5 +1,5 @@
 window.SITE_DATA = {
-  marquee: ["Visual Identity","Editorial","Packaging","Brand Systems","Social","Motion","E-commerce","Print"],
+  marquee: ["Visual Identity","Editorial","Packaging","Brand Systems","Social","Motion","E-commerce","Web Design","Print"],
   projects: [
     { n:"01", title:"Aiko Designs", tag:"Visual Identity", year:"2017", img:"assets/portfolio/aiko.jpg", copy:"Personal freelance brand. The owl as symbol of change and clarity — built from an introspective brief into a full identity system and brand book." },
     { n:"02", title:"Cristina Clamote", tag:"Visual Identity / Salon", year:"2019", img:"assets/portfolio/clamote.jpg", copy:"Rebrand of a Porto hair salon with 20+ years of history. Modern, unisex, instantly recognisable — applied across signage, uniforms, social and interior." },
@@ -11,8 +11,9 @@ window.SITE_DATA = {
   ],
   skills: [
     { title:"Adobe Suite", items:["Illustrator","Photoshop","InDesign","After Effects","Premiere Pro","Animate","Lightroom","Dreamweaver"] },
+    { title:"Web Design", items:["HTML / CSS","Figma","Webflow","WordPress","Responsive Design"] },
     { title:"E-commerce", items:["Shopify","Amazon Seller Central","SEO","Social Strategy"] },
-    { title:"Also Fluent In", items:["CorelDraw","Canva","LibreOffice Draw","HTML / CSS"] }
+    { title:"Also Fluent In", items:["CorelDraw","Canva","LibreOffice Draw"] }
   ],
   education: [
     { year:"2020", title:"Master's Degree — Graphic Design", place:"Escola Superior de Artes Aplicadas, IPCB" },

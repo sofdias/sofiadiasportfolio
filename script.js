@@ -85,7 +85,7 @@
         if (status) status.textContent = "Please fill in every field.";
         return;
       }
-      const subject = encodeURIComponent(`New brief from ${name}`);
+      const subject = encodeURIComponent(`New message from ${name}`);
       const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
       window.location.href = `mailto:sofia.gr.13@gmail.com?subject=${subject}&body=${body}`;
       if (status) status.textContent = "Opening your email client…";
